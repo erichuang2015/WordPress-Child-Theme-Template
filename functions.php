@@ -19,7 +19,7 @@ if ( ! function_exists( 'child_theme_enqueue_styles' ) ) {
 
         // 親テーマと子テーマのCSSファイルを読み込み
         wp_enqueue_style(
-            'child-style',
+            'style',
             get_theme_file_uri() . '/style.css',
             array( 'parent-style' ),
             filemtime( get_theme_file_path( '/style.css' ) )
